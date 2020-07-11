@@ -1,0 +1,198 @@
+body{
+  background-color: #ebebeb;
+  overflow-x: hidden;
+}
+
+/*--------------------------MENU DE NAVEGAÇÃO------------------------------*/
+header#cabecalho{
+  margin-right: -10px;
+  margin-left: -10px;
+  border-bottom:1px solid #BDBDBD;	
+  height: 70px;
+  background-color: white;
+}
+/*Estiliza a imagem do insta*/
+hgroup#insta{
+  position: absolute;
+  left: 10%;
+}
+hgroup#insta img{
+  width:8%;
+  height: 8%;
+}/*-----*/
+
+/*Estiliza a barra de pesquisa*/
+div#pesquisa{
+  position: absolute;
+  width: 100%;
+  top: 3%; /*Distância da barra de pesquisa até o topo da página*/
+  left: 40%;/*Distância da barra de pesquisa até a esquerda da página*/
+}
+::placeholder{
+  color: #ADADAD;
+}
+div#pesquisa input{
+  outline: none;
+  background-color: #FAFAFA;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+  border: #DBDBDB;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  width: 15%; 
+  height: 35px; /*não foi fração*/
+  padding-left: 10px;
+}
+/*-----*/
+
+/*Estiliza os ícones*/
+nav#menu ul{
+  list-style:none;
+  position: absolute;
+  top: 1%;
+  right: 15%;
+}
+nav#menu li{
+  display: inline;
+  margin: 15px;
+}
+nav#menu li img{
+  width: 30px;
+  height: 30px;
+}
+/*-------*/
+/*----------------FIM DO MENU DE NAVEGAÇÃO-------------------*/
+
+
+/*--------------IMAGEM PRINCIPAL e BARRA LATERAL----------------*/
+
+/*O container tanto da foto quanto da barra lateral*/
+div#postagem{
+  background-color:#fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 2%;
+  width: 83%;
+}
+/*----*/
+
+/*-------------COMEÇO DA ESTILIZAÇÃO DA BARRA LATERAL-----------*/
+
+/*Estlização geral da barra lateral*/
+div#barraLateral{
+  display: flex;
+  flex-direction: column;
+}
+div#barraLateral p{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #262626;
+}
+div#barraLateral img{
+  width: 10%;
+}
+/*---*/
+
+/*Começo da estilização da seção 1. Ela é o local onde fica a foto do autor da postagem, o nome do autor
+a palavra "SEGUINDO" e o botão de opções*/
+div#secao1{
+  display: flex;
+  flex-flow: row;
+  margin-top: 1%;
+  border-style: solid;
+  border-width: 1px;
+  border-color:#DBDBDB;/*Usei essa série de borders, pois quando eu usava apenas o border-bottom, todos os outros apareciam, mas a borda de baixo era omitida*/
+  border-top: #eee;/*O jeito foi usar todos os borders, para que todos ficassem omitidos e a borda de baixo aparecesse*/
+  border-right: #eee;
+  border-left: #eee;
+}
+div#secao1 img{
+  width: 20%;
+}
+div#secao1 p{
+  font-weight: bold;
+}
+div#opcoes{
+  position: absolute;/*Configura a posição do botão de opções especificamente*/
+  left:1550px;
+}
+div#usuario1{
+  position: absolute;/*Configura a posição do nome do autor especificamente*/
+  left: 37%;
+}
+div#seguindo1{
+  position: absolute;/*Configura a posição da palavra "seguindo" especificamente*/
+  left: 42%;
+}
+/*----*/
+
+/*Começo da estilização da seção 2. Ela é o local da legenda da foto*/
+div#secao2{
+  display: flex;
+  flex-flow: row;
+  margin-top: 1%;
+  border-style: solid;
+  border-width: 1px;
+  border-color:#DBDBDB;/*Aqui de novo usei vários bordes*/
+  border-top: #eee;
+  border-right: #eee;
+  border-left: #eee;
+  padding-bottom: 20%;
+}
+div#secao2 img{
+  width: 45%;
+}
+div#secao2 p{
+  font-weight: bold;
+}
+div#usuario2{
+  position: absolute;/*Configura a posição do nome do autor especificamente*/
+  left: 37%;
+}
+div#legendaFoto{
+  position: relative;/*Configura a posição da legenda da foto especificamente*/
+  right: 5%;
+  top: 13%;
+}
+div#legendaFoto p{
+  font-weight: normal;
+}
+/*----*/
+
+/*-Começo da estilização da seção 3. Ela é onde estão os botões de "gostei", "comente", "enviar" e "salvar*/
+div#secao3{
+  display: flex;
+  flex-flow: row;
+  margin-top: 1%;
+  margin-left: 5%;
+  padding-bottom: 5%;
+}
+div#secao3 img{
+  width: 15%;
+}
+div#secao31{/*Posiciona os ícones de "gostei", "comente", "enviar", que estão numa mesma div, que não tem o botão de salvar*/
+  display: flex;
+  flex-flow: row;
+  margin-right: 40%;
+}
+/*--------*/
+
+/*Começo da estilização da seção 4. Ela é a parte para escrever um comentário*/
+div#secao4{
+  margin-top: 1%;
+  width: 100%;
+  height: 100%;
+}
+div#secao4 input{
+  outline: none;
+  background-color: #FAFAFA;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+  border: #DBDBDB;
+  border-style: solid;
+  border-width: 1px;
+  width: 95.7%; 
+  height: 75px;
+}
+/*-------------*/
